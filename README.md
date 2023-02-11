@@ -20,8 +20,8 @@ In the [Rapt portal](https://app.rapt.io/integration/webhooks/list) create a cus
 
 #### Rapt Portal Webhook Details
 ![Custom-webhook-details](https://user-images.githubusercontent.com/52124037/218245740-678fa470-907f-4a2f-97cb-2880a24c4985.png)
-Name the webhook whatever.
 
+Name the webhook whatever (e.g. Pill to HA)
 
 IMPORTANT!! Make sure your HA instance has a web accessible URL i.e. Using a cloud service. This won't work if you are trying to send webhooks to a local instance of Home Assistant (e.g. 192.168.1.1:8123)
 
