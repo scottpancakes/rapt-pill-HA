@@ -21,7 +21,9 @@ In the [Rapt portal](https://app.rapt.io/integration/webhooks/list) create a cus
 #### Rapt Portal Webhook Details
 
 Name the webhook whatever.
-IMPORTANT!! Make sure your home assistance instance is web accessable i.e. using a cloud service. This won't work if you are trying to send webhooks to a local instance of Home Assistant (e.g. 192.168.1.1:8123)
+
+
+IMPORTANT!! Make sure your HA instance has a web accessible URL i.e. Using a cloud service. This won't work if you are trying to send webhooks to a local instance of Home Assistant (e.g. 192.168.1.1:8123)
 
 Copy you HA URL from your browser and add the the following ```/api/webhook/rapt-hydrometer-pill```
 
