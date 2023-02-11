@@ -13,6 +13,7 @@ Idiot's guide to getting the rapt pill to work with HA using webhooks.
 ### Rapt portal
 
 In the [Rapt portal](https://app.rapt.io/integration/webhooks/list) create a custom webhook
+
 ![Custom-webhook](https://user-images.githubusercontent.com/52124037/218245590-95ddaa8b-5d8c-4855-b673-c2a16b0895c6.png)
 
 
@@ -27,6 +28,7 @@ Copy you HA URL from your browser and add the the following ```/api/webhook/rapt
 Your URL should look something like the following ```https://this-should-be-a-web-accessible-address-eg-nabucasa/api/webhook/rapt-hydrometer-pill```
 
 Select Method: Post
+
 ![Custom-webhook-details](https://user-images.githubusercontent.com/52124037/218245740-678fa470-907f-4a2f-97cb-2880a24c4985.png)
 
 
@@ -46,14 +48,14 @@ Copy the following into the payload section:
 ![Custom-webhook-payload](https://user-images.githubusercontent.com/52124037/218245797-ad54f6ba-7a0d-448d-9770-2ba86f123357.png)
 
 #### Rapt Portal Webhook Payload
-IMPORTANT!!! click the ✕ symbol to turn it into a ✓ to start the Rapt portal sending data
+IMPORTANT!!! Click the ✕ symbol to turn it into a ✓ to start the Rapt portal sending data
 
 ![Custom-webhook-devices](https://user-images.githubusercontent.com/52124037/218245844-1438fd28-303c-491e-9825-1fd24f3f649c.png)
 
 
 
 ### Home assistant
-In the ```configuration.yaml``` add the following
+In the ```configuration.yaml``` add the following:
 
 ```
 template:        
@@ -87,4 +89,4 @@ template:
         icon: mdi:spirit-level
 ```
 
-
+Done.
