@@ -50,11 +50,11 @@ Copy the following into the payload section:
 ![Custom-webhook-payload](https://user-images.githubusercontent.com/52124037/218245797-ad54f6ba-7a0d-448d-9770-2ba86f123357.png)
 
 #### Rapt Portal Webhook Payload
-IMPORTANT!!! Click the ✕ symbol to turn it into a ✓ to start the Rapt portal sending data
+IMPORTANT!!! Click the ✕ symbol to turn it into a ✓ to start the Rapt portal sending data.
 
 ![Custom-webhook-devices](https://user-images.githubusercontent.com/52124037/218245844-1438fd28-303c-491e-9825-1fd24f3f649c.png)
 
-
+Click save.
 
 ### Home assistant
 In the ```configuration.yaml``` add the following:
@@ -90,5 +90,6 @@ template:
         unit_of_measurement: SG
         icon: mdi:spirit-level
 ```
+Restart Home Assistant.
 
 Done.
