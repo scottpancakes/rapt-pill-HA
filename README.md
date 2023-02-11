@@ -1,11 +1,11 @@
 # rapt-pill-HA
-Idiots guide to getting the rapt pill to work with HA using webhooks
+Idiot's guide to getting the rapt pill to work with HA using webhooks.
 
 
 ## Requirements:
 - RAPT Pill
 - Home Assistant install
-- Cloud access (Nebu Casa)
+- Cloud access HA instance (Nebu Casa)
 
 
 ## Method:
@@ -13,14 +13,25 @@ Idiots guide to getting the rapt pill to work with HA using webhooks
 ### Rapt portal
 
 In the [Rapt portal](https://app.rapt.io/integration/webhooks/list) create a custom webhook
+![Custom-webhook](https://user-images.githubusercontent.com/52124037/218245590-95ddaa8b-5d8c-4855-b673-c2a16b0895c6.png)
 
 
 
+####Rapt Portal Webhook Details
 
 Name the webhook whatever.
-for the url, make sure this is web accessable. i.e. using a cloud service. this wont work if you are trying to send webhooks to a local instance of Home Assistant
-eg https://this-should-be-a-web-accessible-address-eg-nabucasa/api/webhook/rapt-hydrometer-pill
-make sure after the web address you inclide:  /api/webhook/rapt-hydrometer-pill
+IMPORTANT!! Make sure your home assistance instance is web accessable i.e. using a cloud service. This won't work if you are trying to send webhooks to a local instance of Home Assistant (e.g. 192.168.1.1:8123)
+
+Copy you HA URL from your browser and add the the following ```/api/webhook/rapt-hydrometer-pill```
+
+Your URL should look something like the following ```https://this-should-be-a-web-accessible-address-eg-nabucasa/api/webhook/rapt-hydrometer-pill```
+
+Select Method: Post
+![Custom-webhook-details](https://user-images.githubusercontent.com/52124037/218245740-678fa470-907f-4a2f-97cb-2880a24c4985.png)
+
+
+
+
 
 
 
