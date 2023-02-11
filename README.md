@@ -17,7 +17,7 @@ In the [Rapt portal](https://app.rapt.io/integration/webhooks/list) create a cus
 
 
 
-####Rapt Portal Webhook Details
+#### Rapt Portal Webhook Details
 
 Name the webhook whatever.
 IMPORTANT!! Make sure your home assistance instance is web accessable i.e. using a cloud service. This won't work if you are trying to send webhooks to a local instance of Home Assistant (e.g. 192.168.1.1:8123)
@@ -30,14 +30,9 @@ Select Method: Post
 ![Custom-webhook-details](https://user-images.githubusercontent.com/52124037/218245740-678fa470-907f-4a2f-97cb-2880a24c4985.png)
 
 
+#### Rapt Portal Webhook Payload
+Copy the following into the payload section:
 
-
-
-
-
-
-
-In the payload section, add the follow text
 ```
 {
 "device_id": "@device_id",
@@ -48,6 +43,13 @@ In the payload section, add the follow text
 "rssi": "@rssi"
 }
 ```
+![Custom-webhook-payload](https://user-images.githubusercontent.com/52124037/218245797-ad54f6ba-7a0d-448d-9770-2ba86f123357.png)
+
+#### Rapt Portal Webhook Payload
+IMPORTANT!!! click the ✕ symbol to turn it into a ✓ to start the Rapt portal sending data
+
+![Custom-webhook-devices](https://user-images.githubusercontent.com/52124037/218245844-1438fd28-303c-491e-9825-1fd24f3f649c.png)
+
 
 
 ### Home assistant
