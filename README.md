@@ -1,5 +1,5 @@
 # rapt-pill-HA
-Idiot's guide to getting the rapt pill to work with HA using webhooks.
+Idiot's guide to getting the rapt pill to send data to HA using webhooks.
 
 
 ## Requirements:
